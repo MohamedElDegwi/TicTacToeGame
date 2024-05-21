@@ -43,7 +43,6 @@ namespace TicTacToeGame
         public void EndGame()
         {
             lblTurnVal.Text = "GAME OVER";
-            groupBox1.Enabled = false;
 
             switch (GameStatus.Winner)
             {
@@ -244,7 +243,6 @@ namespace TicTacToeGame
             GameStatus.GameOver = false;
             GameStatus.Winner = enWinner.GameInProgress;
             lblWinner.Text = "In Progress";
-            groupBox1.Enabled = true;
         }
 
         private void btnRestartGame_Click(object sender, EventArgs e)
