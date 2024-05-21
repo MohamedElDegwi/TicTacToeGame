@@ -40,9 +40,23 @@ namespace TicTacToeGame
             InitializeComponent();
         }
 
+        public void DisableEnableBtns(bool Enable = true)
+        {
+            btn1.Enabled = Enable;
+            btn2.Enabled = Enable;
+            btn3.Enabled = Enable;
+            btn4.Enabled = Enable;
+            btn5.Enabled = Enable;
+            btn6.Enabled = Enable;
+            btn7.Enabled = Enable;
+            btn8.Enabled = Enable;
+            btn9.Enabled = Enable;
+        }
+
         public void EndGame()
         {
             lblTurnVal.Text = "GAME OVER";
+            DisableEnableBtns(false);
 
             switch (GameStatus.Winner)
             {
@@ -203,6 +217,7 @@ namespace TicTacToeGame
             GameStatus.GameOver = false;
             GameStatus.Winner = enWinner.GameInProgress;
             lblWinner.Text = "In Progress";
+            DisableEnableBtns();
         }
 
         private void btnRestartGame_Click(object sender, EventArgs e)
