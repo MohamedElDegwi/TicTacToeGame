@@ -172,49 +172,9 @@ namespace TicTacToeGame
             e.Graphics.DrawLine(pen, 718, 61, 718, 449);
         }
 
-        private void btn5_Click(object sender, EventArgs e)
+        private void btn_Click(object sender, EventArgs e)
         {
-            ChangeImage(btn5);
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            ChangeImage(btn8);
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            ChangeImage(btn7);
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            ChangeImage(btn6);
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            ChangeImage(btn9);
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            ChangeImage(btn4);
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            ChangeImage(btn3);
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            ChangeImage(btn2);
-        }
-
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            ChangeImage(btn1);
+            ChangeImage((Button)sender);
         }
 
         private void ResetBtn(Button btn)
